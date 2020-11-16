@@ -2,7 +2,7 @@ require 'open-uri'
 
 class GamesController < ApplicationController
 
-  LETTERS = ('a'..'z').to_a.sample(10)
+  LETTERS = (('a'..'z').to_a * 5).sample(10)
 
   def new
     @letters = LETTERS
